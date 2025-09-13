@@ -45,3 +45,30 @@ body{
     }
     
 }
+
+
+
+
+/* start footer */
+.footer{
+    background-color: #EEEFFB;
+    padding: 50px 0;
+    
+}
+.footer-item{
+    gap:45px;
+}
+.footer .address-info{
+    color: #8A8FB9;
+}
+.footer a{
+    color: #8A8FB9;
+}
+.footer .left-side{
+    gap: 35px;
+    align-items: flex-start;
+}
+.footer .right-side{
+    width:60%
+}
+/* end footer */
