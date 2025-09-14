@@ -47,7 +47,44 @@ body{
     
 }
 
+/* fetured start */
 
+/* featured end */
+
+.featured-product {
+    padding: 50px 0;
+}
+.featured-product h2{
+    margin-bottom: 30px;
+}
+.featured-product .row{
+    justify-content: flex-start;
+    gap: 15px;
+}
+.featured-product .product{
+flex: 1 0px 300px;
+box-shadow: 0px 4px 4px #00000040;
+ border-radius: 5px;
+ margin: auto;
+}
+.product .img{
+    background-color: #F6F7FB;
+    padding: 35px;
+  
+    
+   
+}
+.product img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+.product-details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
 /* start newslater */
 .newslater{
   background-image: url('../img/public/Rectangle\ 102.webp');
@@ -151,3 +188,5 @@ gap: 45px;
     
 }
 /* end footer */
+
+
