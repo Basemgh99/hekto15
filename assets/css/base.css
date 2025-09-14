@@ -32,6 +32,7 @@ background-color: #08D15F;
     justify-content: space-between;
     align-items: center;
 }
+
 .container{
     width:calc(100% - 320px);
     margin: auto;
