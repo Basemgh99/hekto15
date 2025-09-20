@@ -12,6 +12,7 @@ ul {
 :root {
   --primary: #fb2e86;
   --main-font: "Lato", sans-serif;
+  --secondry:#151875;
 }
 .btn {
   border: none;
@@ -91,10 +92,10 @@ ul {
     color: var(--primary);
 }
 .text-secondry{
-color: #151875;
+color:var(--secondry)
 }
 .text-primary{
-    color:#FB2E86;
+    color:var(--primary);
     font-weight: bold;
 }
 
@@ -105,7 +106,13 @@ font-size: 16px;
 .text-sans{
     font-family: "Josefin Sans", sans-serif;
 }
+.text-bold{
+    font-weight: bold;
+}
 
 .text-dark{
     color: #8A8FB9;
+}
+.items-back{
+    background-color: none;
 }
