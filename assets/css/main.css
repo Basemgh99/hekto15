@@ -123,12 +123,6 @@ body{
 .product{
     position: relative;
 }
-.badge-sale{
-    position: absolute;
-  
-    top: 15px;
-    left: 4px;
-}
 
 .color{
     width: 14px;
@@ -190,10 +184,41 @@ box-shadow: 0px 4px 4px #00000040;
 .product-details h3{
     transition: all .6s;
 }
+
+.product-icon{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
 .product .img img{
     width: 200px;
     height: 200px;
     object-fit: contain;
+}
+.btn-featured{
+     opacity: 0;
+   visibility: hidden;
+   transform: translateY(150px); /* نزول لتحت شوي */
+    transition: all 0.6s ease;
+   width:100px;
+   height: 40px;
+   border-radius: 2px;
+   background-color:#08D15F;
+   text-align: center;
+   padding: 9px 18px 8px 18px;
+   font-family: "Josefin Sans", sans-serif;
+   color: #fff;
+   position: absolute;
+   left: 135px;
+}
+.featured-product .btn-featured:hover .btn-featured {
+ 
+
+opacity: 1;
+visibility: visible;
+  
 }
 .product-details{
     display: flex;
@@ -320,6 +345,16 @@ font-weight: bold;
     left: 20px;
 
 }
+@media screen and (max-width:406px) {
+    .leatest-products .item .item-details{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
 
 @media screen and (min-width: 1150px) and  (max-width: 1227px) {
 .leatest-products .item {
@@ -328,6 +363,35 @@ font-weight: bold;
     /* box-shadow: 0px 4px 4px #00000040; */
     position: relative;
 }    
+}
+
+@media screen and (min-width:1000px)   and (max-width: 1400px) {
+/* .leatest-products .item img {
+    width: 200px;
+    height: 200px;
+      
+} 
+    .leatest-products .item-sale{
+    position: absolute;
+    left: 20px;
+    
+    
+}  
+   .leatest-products .item-sale img{
+    width: 150px;
+    
+    
+}     */
+        .leatest-products .item-sale{
+    position: absolute;
+    top: 20px;
+    left: 1px;
+    
+    
+}
+    .leatest-products .item-sale img{
+        width: 70px;
+    }
 }
 
 @media screen and (min-width: 1227px) and  (max-width: 1400px) {
@@ -361,8 +425,7 @@ font-weight: bold;
     left: 1px;
     
     
-}
-    
+}    
 }
 @media screen and (min-width: 727px) and (max-width: 902px) {
 .leatest-products .item{
@@ -643,6 +706,102 @@ color:#151875;
 
 /* end newslater */
 
+/* leatest start */
+.leatest-blog{
+    padding: 70px 0;
+}
+.leatest-blog .bottom{
+    color: #151875;
+    font-weight: 900;
+    margin-bottom: 80px;
+}
+.leatest-blog .row{
+    justify-content: flex-start;
+    gap: 64px;
+}
+
+.leatest-blog .leatest-item{
+    flex: 1 0 370px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+   box-shadow: 0 8px 40px #31208a0d;
+ 
+  
+   
+}
+.leatest-blog .leatest-item .leatest-img img{
+    width: 100%;
+   border-radius: 8px;
+}
+
+.leatest-blog .leatest-details .leatest-icon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+.leatest-blog .leatest-details .leatest-icon .leatest-icon-one span{
+   margin-left: 8px;
+   color: #151875;
+    
+}
+
+.leatest-blog .leatest-details .leatest-icon .leatest-icon-one img {
+   margin-left: 14px;
+    color: #151875;
+}
+
+.leatest-blog .leatest-details .leatest-icon .leatest-icon-two span{
+   margin-left: 8px;
+   color: #151875;
+    
+}
+
+.leatest-blog .leatest-details .leatest-icon .leatest-icon-two img {
+   margin-left: 14px;
+   color: #151875;
+    
+}
+
+
+.leatest-blog .leatest-details .leatest-text{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    padding: 50px ;
+    gap: 17px;
+    margin-left: 19px;
+}
+
+.leatest-blog .leatest-details .leatest-text h2{
+   color: #151875;
+    font-family: "Josefin Sans", sans-serif;
+      transition: all 0.6s ease !important;
+}
+.leatest-blog .leatest-details .leatest-text p{
+  color:#72718F;
+  line-height: 30px;
+  text-align: start;
+ 
+}
+.leatest-blog .leatest-details .leatest-text a{
+  color: #151875;
+  text-decoration: underline;
+    transition: all 0.6s ease-out !important;
+}
+
+.leatest-blog .leatest-details .leatest-text:hover h2{
+    color: #FB2E86;
+}
+.leatest-blog .leatest-details .leatest-text:hover a{
+    color: #FB2E86;
+}
+
+
+/* leatest end */
 /* start clients */
 .clients{
     padding: 50px 0;
