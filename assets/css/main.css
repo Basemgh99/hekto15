@@ -425,6 +425,8 @@ font-weight: bold;
     color: #D9D9D9;
     margin-bottom: 45px;
     font-weight: 900;
+    word-spacing: 2px;
+    line-height: 30px;
 }
 
 @media screen and (min-width: 1065px) {
@@ -433,7 +435,77 @@ font-weight: bold;
 }  
 }
 
+@media screen and (max-width: 414px) {
+.shopex .shopex-product{
+    text-align: center;
+}  
+}
+
 /* shopex end */
+
+/* Trending product */
+.trending{
+    padding: 50px 0;
+}
+.trending h2{
+    color: #151875;
+    font-weight: 900;
+    margin-bottom: 39px;
+}
+.trending .row{
+    justify-content: flex-start;
+    gap: 29px;
+    
+}
+.trending .trending-product{
+    flex: 1 0 270px;
+    text-align: center;
+     box-shadow: 0px 8px 40px 0px rgba(49, 32, 138, 0.05);
+
+}
+.trending .trending-img{
+    background-color: #F5F6F8;
+    margin:  11px 12px 40px 11px;
+    padding: 70px 0;
+  
+    
+}
+.trending img{
+    width: 200px;
+    height: 200px;
+}
+.trending .trending-product .trending-text{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.trending .trending-product .trending-text p{
+    color: #151875;
+    font-weight: 900;
+}
+.trending .trending-product .trending-money {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 32px;
+    
+}
+
+.trending-product .trending-money .after-discount{
+    color: #151875;
+    font-weight: 600;
+}
+.trending-product .trending-money .before-discount {
+  color:#D9D9D9;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+/* Trending product */
 
 /* start newslater */
 .newslater{
