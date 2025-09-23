@@ -119,3 +119,6 @@ font-size: 16px;
 .text-blue{
     color: #151875;
 }
+.transition{
+    transition: all 0.6s ease;
+}

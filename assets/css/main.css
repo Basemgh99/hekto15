@@ -94,7 +94,14 @@ body{
     .hero-content .hero-lamp{
       position: relative;
     bottom: 45px;
-    
+    }
+    .text-content {
+        text-align: center;
+        line-height: 40px;
+    }
+    .text-content a{
+        width: 180px;
+        
     }
     
 }
@@ -103,6 +110,10 @@ body{
       position: relative;
     bottom: 45px;
     
+    }
+   .hero .text-content{
+    padding: 35px 0;
+
     }
     
 }
@@ -506,6 +517,108 @@ font-weight: bold;
 }
 
 /* Trending product */
+
+/* top categories */
+.Categories{
+    padding: 50px 0;
+   
+}
+.Categories h2{
+    color: #151875;
+    font-weight: 900;
+    margin-bottom: 62px;
+}
+.Categories .row{
+    justify-content:flex-start ;
+    gap: 25px;
+}
+.Categories .categories-product{
+    flex: 1 0 269px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+ 
+
+}
+.Categories .categories-product .categories-img{
+    background-color: #f6f7fb;
+     border-radius: 50%;
+     box-shadow: 0px 8px 40px #31208a0d;
+     width: 300px;
+     height: 300px;
+     padding: 46px 50px 41px 46px;
+  
+
+}
+
+
+.Categories .categories-product .categories-img img{
+   width: 150px;
+   height: 150px;
+}
+
+.btn-categories{
+ opacity: 0;
+   visibility: hidden;
+   transform: translateY(150px); /* نزول لتحت شوي */
+    transition: all 0.6s ease;
+   width:100px;
+   height: 40px;
+   border-radius: 2px;
+   background-color:#08D15F;
+   text-align: center;
+   padding: 9px 18px 8px 18px;
+   font-family: "Josefin Sans", sans-serif;
+   color: #fff;
+   position: absolute;
+   left: 135px;
+
+}
+.Categories .categories-product:hover .btn-categories {
+ 
+
+opacity: 1;
+visibility: visible;
+  
+
+}
+@media screen and (max-width:1400px) {
+    .btn-categories {
+        position: absolute;
+       text-align: center !important;
+       margin-left: 45px;
+
+       
+    }
+    
+}
+.Categories .categories-product .categories-text{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 13px;
+    color: #151875;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* top categories */
+
 
 /* start newslater */
 .newslater{
