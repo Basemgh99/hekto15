@@ -62,7 +62,7 @@ body{
 }
 .hero-content .hero-lamp{
     position: relative;
-    bottom: 120px;
+    bottom: 50px;
     width: 25%;
     
 }
@@ -81,7 +81,7 @@ body{
     flex-direction: column;
     gap: 40px;
     position: relative;
-    top: 50px;
+    top: 10px;
 }
 @media  screen and (max-width:568px) {
     .hero-content .hero-lamp{
@@ -113,6 +113,11 @@ body{
     }
    .hero .text-content{
     padding: 35px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
     }
     
@@ -296,7 +301,7 @@ font-weight: bold;
 }
 .leatest-products .item{
 
-    flex: 1 0 calc((100% - 36px)/3);
+    flex: 1 0 360px;
     text-align: center;
     /* box-shadow: 0px 4px 4px #00000040; */
     position: relative;
@@ -307,7 +312,7 @@ font-weight: bold;
 .leatest-products .item-sale{
     position: absolute;
     top: 20px;
-    left: 60px;
+    left: 10px;
     
 }
 
@@ -316,13 +321,7 @@ font-weight: bold;
     padding:30px ;
 }
 
-.leatest-products .item-details{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 10px;
 
-}
 
 .leatest-products h2{
     color: #151875;
@@ -349,7 +348,7 @@ font-weight: bold;
 
 .leatest-products .item .icon-details{
       opacity: 0;
-   visibility: hidden;  
+   
    transform: translateY(150px); 
    transition: all 0.6s ease-in;
    padding: 9px 18px 8px 18px;
@@ -359,6 +358,8 @@ font-weight: bold;
    flex-wrap: wrap;
    flex-direction: column;
    gap: 5px;
+  
+  
    
 }
 
@@ -367,6 +368,7 @@ font-weight: bold;
 .leatest-products .item:hover .icon-details{
   opacity: 1;
 visibility: visible;
+width: 100%;
 
 }
 @media screen and (max-width:406px) {
@@ -475,6 +477,43 @@ visibility: visible;
     gap: 20px;
 }
 }
+@media screen and (max-width: 1800px) {
+.leatest-products .item .icon-details{
+    position: absolute;
+    width: 20px !important;
+    
+   
+
+}   
+}
+
+@media screen and (min-width: 770px) and  (max-width: 1401px) {
+ 
+.item,.leatest-products{
+   
+    position: relative;
+}
+
+.leatest-products .item .icon-details {
+    position: absolute !important;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5px;
+    top: -20px;
+
+    
+    
+}
+.leatest-products .item .icon-details img {
+width: 19px;
+height: 19px;
+
+    
+    
+}
+}
+
 /* leatest products */
 
 /* shopex start */
@@ -617,18 +656,18 @@ visibility: visible;
     margin-bottom: 62px;
 }
 .Categories .row{
-    justify-content:flex-start ;
-    gap: 25px;
+    justify-content: flex-start;
+    gap: 5px;
 }
 .Categories .categories-product{
-    flex: 1 0 269px;
+   flex: 1 1 calc((100% - 15px) / 4);
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+  
     position: relative;
  
 
@@ -664,7 +703,7 @@ visibility: visible;
    font-family: "Josefin Sans", sans-serif;
    color: #fff;
    position: absolute;
-   left: 135px;
+   left: 100px;
 
 }
 .Categories .categories-product:hover .btn-categories {
@@ -698,6 +737,12 @@ visibility: visible;
 
 
 
+
+ @media screen and (min-width:1139px) and  (max-width: 1579px) {
+  .Categories .categories-product {
+    width: calc((100% - 15px) / 4);
+  }
+}
 
 
 
@@ -746,17 +791,20 @@ color:#151875;
 }
 
 .leatest-blog .leatest-item{
-    flex: 1 0 370px;
+    flex: 1 0 300px;
     text-align: center;
     background-color: #FFFFFF;
     border-radius: 5px;
    box-shadow: 0 8px 40px #31208a0d;
+   width: 100%;
+   height: 100%;
  
   
    
 }
 .leatest-blog .leatest-item .leatest-img img{
     width: 100%;
+    height: 100%;
    border-radius: 8px;
 }
 
@@ -788,6 +836,9 @@ color:#151875;
    color: #151875;
     
 }
+.leatest-blog .leatest-details {
+   padding: 0px 10px;
+}
 
 
 .leatest-blog .leatest-details .leatest-text{
@@ -796,7 +847,7 @@ color:#151875;
     flex-direction: column;
     justify-content: flex-start;
     align-items: start;
-    padding: 50px ;
+    padding: 10px 20px;
     gap: 17px;
     margin-left: 19px;
 }
@@ -805,11 +856,14 @@ color:#151875;
    color: #151875;
     font-family: "Josefin Sans", sans-serif;
       transition: all 0.6s ease !important;
+      text-align: start;
+      font-size: 15px;
 }
 .leatest-blog .leatest-details .leatest-text p{
   color:#72718F;
   line-height: 30px;
   text-align: start;
+  font-size: 14px;
  
 }
 .leatest-blog .leatest-details .leatest-text a{
@@ -911,8 +965,7 @@ gap: 45px;
     .footer {
         width: 100%;
         text-align: center !important;
-    }
-    
+    }  
 }
 
 /* end footer */
